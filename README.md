@@ -14,7 +14,7 @@ Stay in touch!!! 🤗
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
 [![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)]()
 ## Looking For Something Specific 🤔
-Alphabetical Order  
+Learned WebDev in this order ⬇  
 [FirstSite](https://github.com/1622vishal/WebDevelopment/tree/master/FirstSite)  
 ## 🔗 Links
 
