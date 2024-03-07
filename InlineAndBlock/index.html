@@ -1,0 +1,28 @@
+<!--Learning about Inline and Block elements in HTML-->
+<!--Inline elements only take necessary space-->
+<!--Block elements takes the complete width of the screen from start till end-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inline and BLock Elements</h1>    <!--heading is block element-->
+    <p>This is some Information.</p>    <!--block-->
+    <a href="https://www.google.com">Google</a>   <!--inline-->
+   
+    <div>This take complete space.</div>       <!--div tag is block element that can make other elements block as well-->
+    <span>This is inline element.</span>       <!--inline tags arranges themselves side by side if came together-->
+    <!--span tag is just like div tag which is used to group similar content only difference being that it is inline -->
+
+    <span>
+        <p>Hello Inline</p>
+    </span>
+    <!--p tag which is block element will remain as it is because span is an inline element and block elements cannot go with span it won't do any good-->
+
+</body>
+</html>

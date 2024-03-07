@@ -1,0 +1,14 @@
+h1{
+    background-color: deepskyblue;
+}
+p{
+    background-color: rgb(30, 66, 66);
+}
+a{
+    background-color: goldenrod;
+}
+span{
+    background-color: mediumvioletred;
+}
+
+/*Added CSS to clearly visualize inline and block elements*/
