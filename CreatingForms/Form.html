@@ -1,0 +1,66 @@
+<!--Creating forms in HTML-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Forms in Website</title>
+</head>
+<body>
+    <h1>Sample Form</h1>
+    <!--set request is used to simply transfer data to database post is used when large data-->
+    <form action="post">     <!--form tag is used to create a form action attribute contains set and post values-->
+        <!--There are different elements in form such as name, phone, email these are added using input tag-->
+        <!--label tag is also used along with input tag, it is used to give a label to the element such as Enter Name-->
+
+        <label for="name">First Name:</label>        <!--Use label before the input tag for which you are using it-->
+        <!--label also helps in clicking the element i.e., you can just click the First Name for clicking the element-->
+        <!--to make label work you have to give the correct id of input element -->
+
+        <input type="text" name="name" id="name" placeholder="Enter First Name">  <!--placeholder attribute tells user what to do with the input element -->       
+
+        <div>            <!--div tag is used to make an element occupy complete block space-->
+        <label for="male">Male</label>   
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">    <!--If you want to select any one button you should give the radio input same name-->
+        </div>      
+        
+        <div>
+            <label for="disabled">PwD:-</label>
+            <input type="checkbox" name="disabled" id="disabled">
+        </div>
+
+        <div>
+            <label for="about">Tell us about yourself:</label>
+            <br>
+            <textarea name="about" id="about" cols="50" rows="6">Tell us about yourself</textarea>   <!--name says it all-->
+        </div>
+
+        <div>
+            <label for="fruits">Fruit:</label>
+            <select name="fruits" id="fruits">
+                <option value="default">--select--</option>
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="banana">Banana</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="required">College*</label>
+            <input type="text" name="required" id="required" required>  <!--required means that this field is mandatory-->
+        </div>
+
+        <div>
+            <label for="autof">Name:</label>
+            <input type="text" name="autof" id="autof" autofocus>    <!--autofocus let the cursor remain at this field even after reloading-->
+        </div>
+        
+    </form>
+
+    <!--There is much more about forms, I will add new things as I learn-->
+
+</body>
+</html>
