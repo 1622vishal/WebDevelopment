@@ -1,0 +1,19 @@
+#first{                   /*# is used to target element using id */
+    color: firebrick;
+    background-color: aqua;
+}
+#second{
+    color: rgb(209, 166, 135);
+    background-color: darkgreen;
+}
+#third{
+    color: magenta;
+}
+
+.red{                  /* .(period) is used to target element using class*/
+    background-color: aquamarine;
+}
+
+.blue{
+    background-color: darkorange;
+}
