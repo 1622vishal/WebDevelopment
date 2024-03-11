@@ -1,0 +1,43 @@
+<!--Adding media such as audio and video in our webpage-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Media</title>
+</head>
+<body>
+    <h1>Video</h1>
+    <video src="Guitar.mp4" width="200" poster="Guitar.webp" muted controls></video>     <!--controls attr. provides the controls such as play/pause mute etc.-->
+    <!--poster adds a thumbnail to a video-->
+    <!--autoplay attr. auto automatically plays your video-->
+    <!--loop attr. loops your video after your video ends-->
+    <!--muted mutes your video-->
+
+    <h1>Audio</h1>
+    <audio src="Song.mp3" preload="none" controls ></audio>
+    <!--audio tag has the same attributes as video-->
+    <!--preload is extra attr. which is not in video tag-->
+    <!--preload has three values namely none, metadata and auto -->
+    <!--preload is used to fetch or preload the audio by the browser-->
+
+    <h1>SVG</h1>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" >
+    </svg>
+
+    <!--SVG defines vector-based graphics in XML, which can be directly embedded in HTML pages.
+    SVG graphics are scalable, and do not lose any quality if they are zoomed or resized:-->
+
+    <!--SVG can also be included using img tag-->
+    <img src="img.svg" alt="Here is SVG" >
+
+    <h1>iFrame</h1>
+    <!--iFrame is used to embedd any other website in your web page-->
+    <iframe src="https://www.codewithharry.com/" width="600" height="300" frameborder="0"></iframe>
+
+    <!--Using Youtube's embedding feature to embedd a video using iFrame-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rXD0Xiyc0kM?si=ICyUH7i7DT7Lttqq&amp;start=454" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
