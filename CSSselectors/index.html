@@ -1,0 +1,84 @@
+<!--This program explains the types of selectors-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element Selector (Changes applied to all elements with the name)*/
+        div{
+            color: hotpink;
+        }
+        /*Class Selector (Changes applied to the elements with same class*/
+        .red{
+            background-color: red;
+        }
+        /*Id selector (Changes applied to the element having particular id*/
+        #purple{
+            background-color: blueviolet;
+        }
+        /*Child Selector (Changes applied if the a element is child of another and it should be present directly and inside some other tag inside parent tag)*/
+        div > p{
+            background-color: brown;
+        }
+        /*Descendant Selector(Changes applied if an element is present inside other tag anywhere i.e. even in tags inside tags*/
+        div p{
+            background-color: lightslategray;
+        }
+        /*Universal Selector (applied to all elements means all)*/
+        *{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /*Pseudo Selectors (Everything is clear from name)*/
+        a:visited{
+            color: fuchsia;
+        }
+        a:link{
+            color: goldenrod;
+        }
+        a:active{
+            background-color: black;
+        }
+        a:hover{
+            background-color: darkorange;
+        }
+        div:hover{
+            background-color: blue;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        First div
+    </div>
+    <div class="red">
+        Second div
+    </div>
+    <div id="purple">
+        Third div
+    </div>
+    <div class="red">
+        Fourth div
+        <p>This is paragraph.</p>
+    </div>
+    <div id="Sixth">
+        Fifth div
+    </div>
+    <div>
+        Sixth div
+        <article>
+            <p>This is nested paragraph</p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+</body>
+</html>
