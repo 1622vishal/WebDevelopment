@@ -1,0 +1,34 @@
+h1{
+    font-family: cursive;      /*font-family changes the appearance of your text*/
+}
+p{
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  */
+    /*If one is not available then second one is applied and so on*/
+
+    /* font-style: italic;
+    font-size: xx-large;
+    font-weight: 2000; */
+
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 5px ;       /*Increases or decreases space b/w letters*/
+
+}
+#lh{
+    line-height: 25px;  /*Increase or decreases space between lines*/
+    text-decoration: underline;
+    text-transform: uppercase;
+    /* text-decoration: double; */
+    text-indent: 45px;
+    text-align: justify;
+    
+}
+
+.new{
+    width: 100px;
+    border: 2px solid brown;
+    text-overflow: ellipsis;           /*These are used when you limits the width and height of an element and you do not want to mess up your content*/
+    /* overflow: scroll; */ /*scrollbar appears*/
+    overflow: hidden;
+}
+
+/*text or fonts attributes are used to style written things*/
