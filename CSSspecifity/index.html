@@ -1,0 +1,39 @@
+<!--CSS Specifity and The Cascade Algorithm-->
+<!--CSS Specifity means which CSS property will be applied to an element if same property is applied multiple times (i.e., overwritten)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specifity</title>
+    <style>
+        h1{
+            color: aquamarine;
+        }
+        h1.red{     /*In this case specifity gets added i.e., 1+10 = 11*/
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .imp{
+            color: lightcoral !important;      /*important got the highest priority more than inline*/
+        }
+        .purple{
+            color: purple;
+        }
+
+        /*As you can see we have applied same property multiple times to the same element*/
+        /*Now what property will be applied is based on certain rules(The Cascade Algorithm)*/
+        /*If same type of selector then last one will be applied*/
+        /*Priority is in this order*/
+        /*Inline Style(1000) > ID selector(100) > Class or attribute selector(10) > Element Selector(1) > Universal Selector(0)*/
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="red blue purple imp">CSS Specifity</h1>
+    </div>
+</body>
+</html>
