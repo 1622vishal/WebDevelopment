@@ -1,0 +1,54 @@
+<!-- To learn about different sizing units -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        .box{
+            background-color: lightcoral;
+            border: 1px solid saddlebrown;
+            width: 110px;      /*px is for pixels */ 
+            margin: auto;         /*set auto margin from left and right*/
+            height: 70vh;
+        }
+        .container{
+            background-color: lightcoral;
+            border: 1px solid saddlebrown;
+            width: 110vw;           /*vw means viewport 110vw means 110 percent of entire screen viewport hence scrollbar appears*/
+            margin: 10px auto; 
+            height: 70vh;       /*Same goes for height it takes 70 percent of height*/
+            min-height: 50vh;     /*This ensures that no matter if content is present or not minimum height will be there and it will expand itself based on the content added*/
+            /* min-width: ;        same goes for min width also */
+        }
+
+        .parent{
+            background-color: crimson;
+            width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .parent  .child{
+            background-color: gray;
+            width: 50%;          /*% sets size based on the width of the parent here parent is outer div */
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello World!!!
+    </div>
+    <div class="container">
+        Another Box
+    </div>
+
+
+    <div class="parent">
+        <div class="child">Hello I'm Child</div>
+    </div>
+</body>
+</html>
