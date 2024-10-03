@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <style>
+        .boxshadow{
+            border: 2px solid black;
+            background-color: khaki;
+            box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .textshadow{
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            outline: 2px solid salmon;           /*This is somewhat similar to border but it is not considered inside box model*/
+        }
+    </style>
+</head>
+<body>  
+    <div class="boxshadow">
+        This is some text.
+    </div>
+    
+    <div class="textshadow">
+        This is shadowed text.
+    </div>
+</body>
+</html>

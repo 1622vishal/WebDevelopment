@@ -1,0 +1,29 @@
+<!-- CSS overflow property to control the overflowing of text from border -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 20vw;
+            height: 10vw;
+            overflow: auto;      /*a scrollbar appears automatically in case of overflow*/
+            /* overflow: scroll;       scrollbar appears no matter what */
+            /* overflow-wrap: normal; */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            /*Try new things when applying and take reference*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        There will be a lot of text here and more text and more and more some more text copying same thing There will be a lot of text here and more text and more and more some more text copying same thing There will be a lot of text here and more text and more and more some more text copying same thing There will be a lot of text here and more text and more and more some more text copying same thing.
+    </div>
+</body>
+</html>
